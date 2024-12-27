@@ -1,0 +1,23 @@
+<html>
+	<body>
+	<h2>All Students</h2>
+	<table border="1">
+		<tr>
+			<th>Register No</th>
+			<th>Name</th>
+			<th>Total</th>
+			<th>Average</th>
+			<th>Result</th>
+		</tr>
+		{% for s in stu %}
+		<tr>
+			<td>{{ s.rno }}</td>
+			<td>{{ s.name }}</td>
+			<td>{{ s.total }}</td>
+			<td>{{ s.average }}</td>
+			<td>{{ s.result }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<form method="POST">
+			{% csrf_token %}
+			{{ pform.as_p }}
+			{{ mform.as_p }}
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+	
+</html>

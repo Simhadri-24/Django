@@ -1,0 +1,13 @@
+<html>
+	<head>
+	<title><Product input</title>
+	</head>
+	<body>
+		<h1>Add Product details </h1>
+		<form method="POST">
+			{% csrf_token %}
+			{{pro.as_p}}
+			<button type="Submit">Submit</button>
+		</form>
+	</body>
+</html>

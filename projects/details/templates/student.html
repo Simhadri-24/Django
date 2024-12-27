@@ -1,0 +1,10 @@
+<html>
+<head>student data form</head>
+<body>
+<h1>enter ur details</h1>
+<form method="POST">{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">submit</button>
+</form>
+</body>
+</html>

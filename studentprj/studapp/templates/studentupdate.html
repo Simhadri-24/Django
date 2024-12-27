@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+<html>
+<body>
+{%block centercontent %}
+<h2>Modify Student</h2>
+<hr>
+
+<form method="POST">  
+        {% csrf_token %}  
+        {{ frm.as_p }}  
+        <button type="submit" >Save</button>  
+    </form>
+<hr>
+
+<h2>{{ studupt.id}} Student Updated Successfully</h2>
+
+<p>Back to <a href="/studapp/">Home</a></p>
+{% endblock %}
+
+</body>
+</html>

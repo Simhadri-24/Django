@@ -1,0 +1,28 @@
+<html>
+	<head>
+	<title>Welcome to forms</title>
+	</head>
+	<body>
+	<form method='POST'>
+		{% csrf_token %}
+		<fieldset>
+			<label>Register no:</label>
+			<input type="number" name="rno">
+			
+			<label>Name:</label>
+			<input type="text" name="name">
+			
+			<label>Mark 1:</label>
+			<input type="number" name="m1">
+			
+			<label>Mark 2:</label>
+			<input type="number" name="m2">
+			
+			<label>Mark 3:</label>
+			<input type="number" name="m3">
+			
+			<button type="submit">Submit</button>
+		</fieldset>
+	</form>
+	</body>
+</html>

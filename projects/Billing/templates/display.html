@@ -1,0 +1,23 @@
+<html>
+	<head>
+	<titleEmployee Details</title>
+	</head>
+	<body>
+		<h1>Employee details </h1>
+		<table border="1">
+			<tr>
+				<th>Employee Name</th>
+				<th>Employee Number</th>
+				<th>Designation</th>
+				<th>Mobile Number</th>
+			</tr>
+			{% for s in emp %}
+			<tr>
+				<td>{{s.empname}}</td>
+				<td>{{s.empnumber}}</td>
+				<td>{{s.designation}}</td>
+				<td>{{s.mnumber}}</td>
+			</tr>
+			{% endfor %}
+	</body>
+</html>

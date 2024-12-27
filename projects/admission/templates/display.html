@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+    <h2>Admission Rank List</h2>
+    <table border="1">
+        <tr>
+            <th>App ID</th>
+            <th>Name</th>
+            <th>Father's Name</th>
+            <th>Mobile Number</th>
+            <th>Email ID</th>
+            <th>Total Marks</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.appid }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.fname }}</td>
+            <td>{{ student.mno }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.total }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
